@@ -82,7 +82,7 @@ int StudentWorld::move()
 			if (completedLevel() == 1)
 			{
 				// Increase NachenBlaster's score appropriately 
-				increaseScore(250);                                    // ??????????????????????????????????????????
+				increaseScore(250);                                    
 				// Reset completedLevel() for next level 
 				update_completed_level(0);
 				// Play sound 
@@ -203,7 +203,7 @@ Actor* StudentWorld::getOneCollidingAlien(const Actor* a) const
 		// If iterator points to an alien,
 		if (*p != nullptr && (*p)->isAlien())
 		{
-			// If collision occurred, return pointer to actor that caddAliaused collision 
+			// If collision occurred, return pointer to actor that caused collision 
 			if (collision(*p, a))
 				return *p;
 		}
